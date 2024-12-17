@@ -13,9 +13,9 @@ public:
         Vector2 positon;
         Vector2 velocity;
         Vector2 enemyDirection;
-        
         Texture2D Texture;
         float speed;
+        float angle;
         float width;
         float height;
 
@@ -23,7 +23,7 @@ public:
 
     std::vector<enemyStats> enemyList;
     enemyStats enemy;
-
+    Texture2D enemyTexture = LoadTexture("../assets/Tiles/Colored/tile_0011.png");
     
     void Spawn(Vector2 playerPos);
 };

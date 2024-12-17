@@ -221,9 +221,18 @@ CMakeFiles/DungeonGen.dir/src/enemy.cpp.o: /home/sarthhak/coding\ projects/rogue
   /usr/include/bits/errno.h \
   /usr/include/bits/floatn-common.h \
   /usr/include/bits/floatn.h \
+  /usr/include/bits/flt-eval-method.h \
+  /usr/include/bits/fp-fast.h \
+  /usr/include/bits/fp-logb.h \
+  /usr/include/bits/iscanonical.h \
   /usr/include/bits/libc-header-start.h \
+  /usr/include/bits/libm-simd-decl-stubs.h \
   /usr/include/bits/locale.h \
   /usr/include/bits/long-double.h \
+  /usr/include/bits/math-vector.h \
+  /usr/include/bits/mathcalls-helper-functions.h \
+  /usr/include/bits/mathcalls-narrow.h \
+  /usr/include/bits/mathcalls.h \
   /usr/include/bits/pthread_stack_min-dynamic.h \
   /usr/include/bits/pthreadtypes-arch.h \
   /usr/include/bits/pthreadtypes.h \
@@ -331,6 +340,7 @@ CMakeFiles/DungeonGen.dir/src/enemy.cpp.o: /home/sarthhak/coding\ projects/rogue
   /usr/include/c++/14.2.1/cctype \
   /usr/include/c++/14.2.1/cerrno \
   /usr/include/c++/14.2.1/clocale \
+  /usr/include/c++/14.2.1/cmath \
   /usr/include/c++/14.2.1/cstdio \
   /usr/include/c++/14.2.1/cstdlib \
   /usr/include/c++/14.2.1/ctime \
@@ -349,6 +359,7 @@ CMakeFiles/DungeonGen.dir/src/enemy.cpp.o: /home/sarthhak/coding\ projects/rogue
   /usr/include/c++/14.2.1/iosfwd \
   /usr/include/c++/14.2.1/iostream \
   /usr/include/c++/14.2.1/istream \
+  /usr/include/c++/14.2.1/math.h \
   /usr/include/c++/14.2.1/new \
   /usr/include/c++/14.2.1/ostream \
   /usr/include/c++/14.2.1/stdexcept \
@@ -378,8 +389,10 @@ CMakeFiles/DungeonGen.dir/src/enemy.cpp.o: /home/sarthhak/coding\ projects/rogue
   /usr/include/gnu/stubs.h \
   /usr/include/linux/errno.h \
   /usr/include/locale.h \
+  /usr/include/math.h \
   /usr/include/pthread.h \
   /usr/include/raylib.h \
+  /usr/include/raymath.h \
   /usr/include/sched.h \
   /usr/include/stdc-predef.h \
   /usr/include/stdio.h \

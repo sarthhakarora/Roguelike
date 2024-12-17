@@ -5,6 +5,7 @@
 #include <iostream>
 #include <cstdlib>  // for srand
 #include <ctime>    // for time
+#include "raymath.h"
 
 
 /*
@@ -21,30 +22,33 @@ Features of this class
 
 void Enemy::Spawn(Vector2 playerPos)
 {
-    // Set the seed to the current time
-    srand(static_cast<unsigned int>(time(0)));
-    
-    // Spawn enemy
-    for (size_t i = enemyList.size(); i < 10; i++)  {
+    // Spawn enemies if the list has less than 10 enemies
+    for (size_t i = enemyList.size(); i < 10; i++) {
         // Set enemy stats
-        enemy.positon = (Vector2){rand() % 100, rand() % 100};
-        enemy.speed = 5;
+        enemy.positon = (Vector2){(rand() % 100), (rand() % 100)};
+        enemy.speed = (rand() % 3) + 2;
         enemy.height = 40.0f;
         enemy.width = 40.0f;
-        enemy.Texture = LoadTexture("../assets/Tiles/Colored/tile_0011.png");
-        
-        enemy.velocity = {};
+        enemy.Texture = enemyTexture; 
+        enemy.enemyDirection = Vector2Subtract(playerPos, enemy.positon);
+        enemy.angle = atan2(enemy.enemyDirection.y, enemy.enemyDirection.x) * RAD2DEG;
+        enemy.velocity = Vector2Scale(Vector2Normalize(enemy.enemyDirection), enemy.speed);
 
-        // Add the enemy to my std::Vector 
+        // Add the enemy to the vector 
         enemyList.push_back(enemy);
     }
 
-    // DrawTextureEx(LoadTexture("../assets/Tiles/Colored/tile_0011.png"), (Vector2){0, 0}, 0.0f, 5.0f, WHITE);
+    // Update and draw all enemies
+    for (size_t j = 0; j < enemyList.size(); j++) {
+        // Update enemy direction and velocity
+        enemyList[j].enemyDirection = Vector2Subtract(playerPos, enemyList[j].positon);
+        enemyList[j].velocity = Vector2Scale(Vector2Normalize(enemyList[j].enemyDirection), enemyList[j].speed);
+        enemyList[j].angle = atan2(enemyList[j].enemyDirection.y, enemyList[j].enemyDirection.x) * RAD2DEG;
 
+        // Move the enemy
+        enemyList[j].positon = Vector2Add(enemyList[j].positon, enemyList[j].velocity);
 
-    // Loop through the enemies to draw them
-    for (size_t j = 0; j < enemyList.size();  j++)  {
-        // void DrawTextureEx(Texture2D texture, Vector2 position, float rotation, float scale, Color tint);  // Draw a Texture2D with extended parameters
-        DrawTextureEx(enemyList[j].Texture, enemyList[j].positon, 0.0f, 5.0f, WHITE);
+        // Draw the enemy
+        DrawTextureEx(enemyList[j].Texture, enemyList[j].positon, enemyList[j].angle, 5.0f, WHITE);
     }
 }
