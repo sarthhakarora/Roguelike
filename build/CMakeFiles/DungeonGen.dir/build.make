@@ -128,19 +128,19 @@ CMakeFiles/DungeonGen.dir/src/camera.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DungeonGen.dir/src/camera.cpp.s"
 	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/sarthhak/coding projects/roguelike/src/camera.cpp" -o CMakeFiles/DungeonGen.dir/src/camera.cpp.s
 
-CMakeFiles/DungeonGen.dir/src/bow.cpp.o: CMakeFiles/DungeonGen.dir/flags.make
-CMakeFiles/DungeonGen.dir/src/bow.cpp.o: /home/sarthhak/coding\ projects/roguelike/src/bow.cpp
-CMakeFiles/DungeonGen.dir/src/bow.cpp.o: CMakeFiles/DungeonGen.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/sarthhak/coding projects/roguelike/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/DungeonGen.dir/src/bow.cpp.o"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DungeonGen.dir/src/bow.cpp.o -MF CMakeFiles/DungeonGen.dir/src/bow.cpp.o.d -o CMakeFiles/DungeonGen.dir/src/bow.cpp.o -c "/home/sarthhak/coding projects/roguelike/src/bow.cpp"
+CMakeFiles/DungeonGen.dir/src/weapon.cpp.o: CMakeFiles/DungeonGen.dir/flags.make
+CMakeFiles/DungeonGen.dir/src/weapon.cpp.o: /home/sarthhak/coding\ projects/roguelike/src/weapon.cpp
+CMakeFiles/DungeonGen.dir/src/weapon.cpp.o: CMakeFiles/DungeonGen.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="/home/sarthhak/coding projects/roguelike/build/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/DungeonGen.dir/src/weapon.cpp.o"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/DungeonGen.dir/src/weapon.cpp.o -MF CMakeFiles/DungeonGen.dir/src/weapon.cpp.o.d -o CMakeFiles/DungeonGen.dir/src/weapon.cpp.o -c "/home/sarthhak/coding projects/roguelike/src/weapon.cpp"
 
-CMakeFiles/DungeonGen.dir/src/bow.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DungeonGen.dir/src/bow.cpp.i"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/sarthhak/coding projects/roguelike/src/bow.cpp" > CMakeFiles/DungeonGen.dir/src/bow.cpp.i
+CMakeFiles/DungeonGen.dir/src/weapon.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/DungeonGen.dir/src/weapon.cpp.i"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/home/sarthhak/coding projects/roguelike/src/weapon.cpp" > CMakeFiles/DungeonGen.dir/src/weapon.cpp.i
 
-CMakeFiles/DungeonGen.dir/src/bow.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DungeonGen.dir/src/bow.cpp.s"
-	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/sarthhak/coding projects/roguelike/src/bow.cpp" -o CMakeFiles/DungeonGen.dir/src/bow.cpp.s
+CMakeFiles/DungeonGen.dir/src/weapon.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/DungeonGen.dir/src/weapon.cpp.s"
+	/usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/home/sarthhak/coding projects/roguelike/src/weapon.cpp" -o CMakeFiles/DungeonGen.dir/src/weapon.cpp.s
 
 CMakeFiles/DungeonGen.dir/src/enemy.cpp.o: CMakeFiles/DungeonGen.dir/flags.make
 CMakeFiles/DungeonGen.dir/src/enemy.cpp.o: /home/sarthhak/coding\ projects/roguelike/src/enemy.cpp
@@ -162,7 +162,7 @@ DungeonGen_OBJECTS = \
 "CMakeFiles/DungeonGen.dir/src/player.cpp.o" \
 "CMakeFiles/DungeonGen.dir/src/tilemanager.cpp.o" \
 "CMakeFiles/DungeonGen.dir/src/camera.cpp.o" \
-"CMakeFiles/DungeonGen.dir/src/bow.cpp.o" \
+"CMakeFiles/DungeonGen.dir/src/weapon.cpp.o" \
 "CMakeFiles/DungeonGen.dir/src/enemy.cpp.o"
 
 # External object files for target DungeonGen
@@ -172,7 +172,7 @@ DungeonGen: CMakeFiles/DungeonGen.dir/src/main.cpp.o
 DungeonGen: CMakeFiles/DungeonGen.dir/src/player.cpp.o
 DungeonGen: CMakeFiles/DungeonGen.dir/src/tilemanager.cpp.o
 DungeonGen: CMakeFiles/DungeonGen.dir/src/camera.cpp.o
-DungeonGen: CMakeFiles/DungeonGen.dir/src/bow.cpp.o
+DungeonGen: CMakeFiles/DungeonGen.dir/src/weapon.cpp.o
 DungeonGen: CMakeFiles/DungeonGen.dir/src/enemy.cpp.o
 DungeonGen: CMakeFiles/DungeonGen.dir/build.make
 DungeonGen: CMakeFiles/DungeonGen.dir/compiler_depend.ts

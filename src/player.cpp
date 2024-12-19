@@ -21,7 +21,7 @@ void Player::Update () {
         destRect.x -= speed;
     }
 
- // std::cout << "x  -  " << destRect.x << "   :   " << "y  -  " << destRect.y << std::endl;
+    //std::cout << "x  -  " << destRect.x << "   :   " << "y  -  " << destRect.y << std::endl;
 }
 
 void Player::Unload() {

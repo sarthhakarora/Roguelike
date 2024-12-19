@@ -1,7 +1,5 @@
 file(REMOVE_RECURSE
   "CMakeFiles/DungeonGen.dir/link.d"
-  "CMakeFiles/DungeonGen.dir/src/bow.cpp.o"
-  "CMakeFiles/DungeonGen.dir/src/bow.cpp.o.d"
   "CMakeFiles/DungeonGen.dir/src/camera.cpp.o"
   "CMakeFiles/DungeonGen.dir/src/camera.cpp.o.d"
   "CMakeFiles/DungeonGen.dir/src/enemy.cpp.o"
@@ -12,6 +10,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/DungeonGen.dir/src/player.cpp.o.d"
   "CMakeFiles/DungeonGen.dir/src/tilemanager.cpp.o"
   "CMakeFiles/DungeonGen.dir/src/tilemanager.cpp.o.d"
+  "CMakeFiles/DungeonGen.dir/src/weapon.cpp.o"
+  "CMakeFiles/DungeonGen.dir/src/weapon.cpp.o.d"
   "DungeonGen"
   "DungeonGen.pdb"
 )

@@ -2,7 +2,7 @@
 #include "player.h"
 #include "tilemanager.h"
 #include "camera.h"
-#include "bow.h"
+#include "weapon.h"
 #include "enemy.h"
 
 #include <iostream>
@@ -22,8 +22,7 @@ int main() {
     // More objects 
     Tile tile;
     GameCamera camera;
-    Bow bow;
-    Enemy enemy;
+    Weapon Weapon;
 
     // Cam attributes
     camera.x = player.x;
@@ -36,10 +35,9 @@ int main() {
     while (!WindowShouldClose()) {
         // Start drawing
         BeginDrawing();
-
+       
         // Set background color
         ClearBackground(Color{34, 35, 35, 255});
-        
         // Set camera target to player center
         camera.camera.target = (Vector2){player.destRect.x, player.destRect.y};
         
@@ -50,16 +48,15 @@ int main() {
         tile.TileRenderer();
         player.Draw();
         player.Update();
-        enemy.Spawn((Vector2){player.destRect.x, player.destRect.y});                
 
+        Weapon.Draw();
+        Weapon.Update((Vector2){player.destRect.x, player.destRect.y}, GetMousePosition());
+        
         // End drawing
         EndMode2D();
         DrawFPS(20, 20);
+
         
-        // Arrow Function
-        bow.ArrowMovement( (Vector2){player.destRect.x, player.destRect.y}, GetMousePosition());
-        bow.BowMovement( (Vector2){camera.x, camera.y}, GetMousePosition() );    
-     
         EndDrawing();
     }
 

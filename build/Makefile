@@ -129,30 +129,6 @@ DungeonGen/fast:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DungeonGen.dir/build.make CMakeFiles/DungeonGen.dir/build
 .PHONY : DungeonGen/fast
 
-src/bow.o: src/bow.cpp.o
-.PHONY : src/bow.o
-
-# target to build an object file
-src/bow.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DungeonGen.dir/build.make CMakeFiles/DungeonGen.dir/src/bow.cpp.o
-.PHONY : src/bow.cpp.o
-
-src/bow.i: src/bow.cpp.i
-.PHONY : src/bow.i
-
-# target to preprocess a source file
-src/bow.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DungeonGen.dir/build.make CMakeFiles/DungeonGen.dir/src/bow.cpp.i
-.PHONY : src/bow.cpp.i
-
-src/bow.s: src/bow.cpp.s
-.PHONY : src/bow.s
-
-# target to generate assembly for a file
-src/bow.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/DungeonGen.dir/build.make CMakeFiles/DungeonGen.dir/src/bow.cpp.s
-.PHONY : src/bow.cpp.s
-
 src/camera.o: src/camera.cpp.o
 .PHONY : src/camera.o
 
@@ -273,6 +249,30 @@ src/tilemanager.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/DungeonGen.dir/build.make CMakeFiles/DungeonGen.dir/src/tilemanager.cpp.s
 .PHONY : src/tilemanager.cpp.s
 
+src/weapon.o: src/weapon.cpp.o
+.PHONY : src/weapon.o
+
+# target to build an object file
+src/weapon.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DungeonGen.dir/build.make CMakeFiles/DungeonGen.dir/src/weapon.cpp.o
+.PHONY : src/weapon.cpp.o
+
+src/weapon.i: src/weapon.cpp.i
+.PHONY : src/weapon.i
+
+# target to preprocess a source file
+src/weapon.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DungeonGen.dir/build.make CMakeFiles/DungeonGen.dir/src/weapon.cpp.i
+.PHONY : src/weapon.cpp.i
+
+src/weapon.s: src/weapon.cpp.s
+.PHONY : src/weapon.s
+
+# target to generate assembly for a file
+src/weapon.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/DungeonGen.dir/build.make CMakeFiles/DungeonGen.dir/src/weapon.cpp.s
+.PHONY : src/weapon.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -282,9 +282,6 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... DungeonGen"
-	@echo "... src/bow.o"
-	@echo "... src/bow.i"
-	@echo "... src/bow.s"
 	@echo "... src/camera.o"
 	@echo "... src/camera.i"
 	@echo "... src/camera.s"
@@ -300,6 +297,9 @@ help:
 	@echo "... src/tilemanager.o"
 	@echo "... src/tilemanager.i"
 	@echo "... src/tilemanager.s"
+	@echo "... src/weapon.o"
+	@echo "... src/weapon.i"
+	@echo "... src/weapon.s"
 .PHONY : help
 
 

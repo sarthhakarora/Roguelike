@@ -11,7 +11,7 @@ set(RAYLIB_DIR "path/to/raylib")  # Update with the path where Raylib is install
 find_package(Raylib REQUIRED)
 
 # Add the executable target
-add_executable(DungeonGen src/main.cpp src/player.cpp src/tilemanager.cpp src/camera.cpp src/bow.cpp src/enemy.cpp)
+add_executable(DungeonGen src/main.cpp src/player.cpp src/tilemanager.cpp src/camera.cpp src/weapon.cpp src/enemy.cpp)
 
 # Link Raylib
 target_link_libraries(DungeonGen raylib)

@@ -25,9 +25,9 @@
 },
 {
   "directory": "/home/sarthhak/coding projects/roguelike/build",
-  "command": "/usr/bin/g++   -g -std=gnu++11 -I/usr/include -o CMakeFiles/DungeonGen.dir/src/bow.cpp.o -c \"/home/sarthhak/coding projects/roguelike/src/bow.cpp\"",
-  "file": "/home/sarthhak/coding projects/roguelike/src/bow.cpp",
-  "output": "CMakeFiles/DungeonGen.dir/src/bow.cpp.o"
+  "command": "/usr/bin/g++   -g -std=gnu++11 -I/usr/include -o CMakeFiles/DungeonGen.dir/src/weapon.cpp.o -c \"/home/sarthhak/coding projects/roguelike/src/weapon.cpp\"",
+  "file": "/home/sarthhak/coding projects/roguelike/src/weapon.cpp",
+  "output": "CMakeFiles/DungeonGen.dir/src/weapon.cpp.o"
 },
 {
   "directory": "/home/sarthhak/coding projects/roguelike/build",

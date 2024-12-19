@@ -23,22 +23,25 @@ public:
     float arrowSpeed = 7.0f;
     Texture2D ArrowTexture = LoadTexture("../assets/Tiles/Colored/tile_0073.png");
 
+
     struct projectile
     {
-        Vector2 postion;
-        Vector2 velocity;
-        Vector2 direction;
-        float arrowAngle;
-        float actualAngle;
-        
-        //bool active;
+    Vector2 postion;       // Position for calculations
+    Vector2 velocity;      // Velocity vector
+    Vector2 direction;     // Direction vector
+    float arrowAngle;      // Angle calculated for movement
+    float actualAngle;     // Actual rotation angle for rendering
+    Rectangle dest;        // Destination rectangle for rendering
     };
+
+
 
     std::vector<projectile> projectiles;
     projectile arrows;
 
-    void BowMovement(Vector2 cameraPos, Vector2 mousePos); 
+    void BowMovement(Vector2 cameraPos, Vector2 mousePos, Vector2 playerPos); 
     void ArrowMovement(Vector2 playerPos, Vector2 mousePos);
+    void Draw();
 };
 
 #endif
