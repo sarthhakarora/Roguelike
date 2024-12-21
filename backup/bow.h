@@ -24,7 +24,7 @@ public:
     Texture2D ArrowTexture = LoadTexture("../assets/Tiles/Colored/tile_0073.png");
 
 
-    struct projectile
+    struct weaponStats
     {
     Vector2 postion;       // Position for calculations
     Vector2 velocity;      // Velocity vector
@@ -36,8 +36,8 @@ public:
 
 
 
-    std::vector<projectile> projectiles;
-    projectile arrows;
+    std::vector<weaponStats> projectiles;
+    weaponStats arrows;
 
     void BowMovement(Vector2 cameraPos, Vector2 mousePos, Vector2 playerPos); 
     void ArrowMovement(Vector2 playerPos, Vector2 mousePos);

@@ -9,23 +9,51 @@
 
 class Weapon {
 public:
-    struct projectile
+    struct weaponStats
     {
         float width;
         float height;
+        float x;
+        float y;
         float angle;
+        Vector2 direction;
         Texture2D texture;
         Rectangle src;
         Rectangle dest;
         
     };
 
+    struct projectileStats
+    {
+        float width;
+        float height;
+        float x;
+        float y;
+        float angle;
+        float speed;
+        Vector2 direction;
+        Vector2 velocity;
+        Texture2D texture;
+        Rectangle src;
+        Rectangle dest;
+    };
+    
+    
+    Vector2 worldMousePos = {};
+
     Texture2D bowTexture = LoadTexture("../assets/Tiles/Colored/bow.png");
+    weaponStats weapon;
     
-    projectile proj;
-    
-    void Draw();
-    void Update(Vector2 playerPos, Vector2 mousePos);
+    Texture2D arrowTexture = LoadTexture("../assets/Tiles/Colored/tile_0073.png");
+    std::vector<projectileStats> projectileList;
+    projectileStats projectile;
+    int maxProjCount = 5;
+
+    void BowDraw();
+    void BowUpdate(Vector2 playerPos, Vector2 mousePos, Vector2 cameraPos);
+
+    void ArrowDraw(Vector2 playerPos);
+    void ArrowUpdate(Vector2 playerPos);
 };
 
 #endif 

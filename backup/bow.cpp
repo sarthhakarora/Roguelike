@@ -63,15 +63,15 @@ void Bow::ArrowMovement(Vector2 playerPos, Vector2 mousePos)
     
 }
 
-void Bow::Draw(){
-    // Player is drawn on the screen
+void Bow::BowDraw(){
+    // arrow is drawn on the screen
     DrawTexturePro(Texture, src, dest, (Vector2){width/2, height/2}, angle, WHITE);
     
     for (size_t j = 0; j < projectiles.size(); j++) {
         // Move the arrow
         projectiles[j].postion = Vector2Add(projectiles[j].postion, projectiles[j].velocity);
 
-        // Update destination rectangle to match position
+        // BowUpdate destination rectangle to match position
         projectiles[j].dest.x = projectiles[j].postion.x;
         projectiles[j].dest.y = projectiles[j].postion.y;
         

@@ -22,12 +22,16 @@ int main() {
     // More objects 
     Tile tile;
     GameCamera camera;
-    Weapon Weapon;
+    Weapon weapon;
+    Enemy enemy;
 
     // Cam attributes
     camera.x = player.x;
     camera.y = player.y;
     camera.camUpdate();
+    
+    // Find the mouse pos relevtile to our pos in the world
+    weapon.worldMousePos = GetScreenToWorld2D(GetMousePosition(), camera.camera);
 
     tile.GenerateMap();
     
@@ -38,6 +42,10 @@ int main() {
        
         // Set background color
         ClearBackground(Color{34, 35, 35, 255});
+
+        // Find the mouse pos relevtile to our pos in the world
+        weapon.worldMousePos = GetScreenToWorld2D(GetMousePosition(), camera.camera);
+
         // Set camera target to player center
         camera.camera.target = (Vector2){player.destRect.x, player.destRect.y};
         
@@ -49,9 +57,16 @@ int main() {
         player.Draw();
         player.Update();
 
-        Weapon.Draw();
-        Weapon.Update((Vector2){player.destRect.x, player.destRect.y}, GetMousePosition());
+        weapon.BowDraw();
+        weapon.BowUpdate((Vector2){player.destRect.x, player.destRect.y}, GetMousePosition(), camera.camera.target);
         
+        weapon.ArrowDraw((Vector2){player.destRect.x, player.destRect.y});
+        weapon.ArrowUpdate((Vector2){player.destRect.x, player.destRect.y});
+
+        enemy.spawn((Vector2){player.destRect.x, player.destRect.y});
+        enemy.update((Vector2){player.destRect.x, player.destRect.y});
+        
+
         // End drawing
         EndMode2D();
         DrawFPS(20, 20);
