@@ -1,6 +1,7 @@
 #include "weapon.h"
 #include "raylib.h"
 #include "raymath.h"
+#include "enemy.h"
 
 #include <iostream>
 #include <vector>
@@ -37,7 +38,7 @@ void Weapon::BowDraw()
 
 void Weapon::ArrowDraw(Vector2 playerPos)
 {
-    if (IsKeyPressed(KEY_SPACE) && projectileList.size() < maxProjCount) {
+if (IsMouseButtonPressed(0) && projectileList.size() < maxProjCount) {
         projectile.width = 40.0f;
         projectile.height = 40.0f;
         projectile.x = playerPos.x; // Start at the player's position
@@ -47,27 +48,32 @@ void Weapon::ArrowDraw(Vector2 playerPos)
         projectile.dest = {projectile.x, projectile.y, 40.0f, 40.0f};
         projectile.texture = arrowTexture;
 
-        projectile.direction = Vector2Subtract(GetMousePosition(), playerPos);
+        projectile.direction = Vector2Subtract(worldMousePos, playerPos);
         projectile.angle = weapon.angle;
         projectile.velocity = Vector2Scale(Vector2Normalize(projectile.direction), projectile.speed);
+        projectile.dest = {projectile.x, projectile.y, projectile.width, projectile.height};
+        //std::cout << "Arrow velocity: " << projectile.velocity.x << ", " << projectile.velocity.y << std::endl;
+    
 
         projectileList.push_back(projectile);
     }
 }
 
-void Weapon::ArrowUpdate(Vector2 playerPos)
+void Weapon::ArrowUpdate(Vector2 playerPos, std::vector<Enemy::enemyStats>& enemyList)
 {
     for (size_t j = 0; j < projectileList.size(); j++) {
+        
         projectileList[j].dest.x += projectileList[j].velocity.x;
         projectileList[j].dest.y += projectileList[j].velocity.y;
-
-        // Check if the projectile is out of bounds
-        if (projectileList[j].dest.x < 0 || projectileList[j].dest.y < 0 ||
-            projectileList[j].dest.x > 800 || projectileList[j].dest.y > 600) {
-            projectileList.erase(projectileList.begin() + j);
-            j--; // Adjust loop index after removal
-            continue;
+        
+        for (size_t k = 0; k < enemyList.size(); k++) {
+          if (CheckCollisionRecs(enemyList[k].dest, projectileList[j].dest)) {
+            //std::cout << "Collision detected!" << std::endl;
+            enemyList.erase(enemyList.begin() + k);
+          }
         }
+
+
 
         // Render the projectile
         DrawTexturePro(

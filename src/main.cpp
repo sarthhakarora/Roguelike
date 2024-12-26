@@ -59,13 +59,12 @@ int main() {
 
         weapon.BowDraw();
         weapon.BowUpdate((Vector2){player.destRect.x, player.destRect.y}, GetMousePosition(), camera.camera.target);
-        
-        weapon.ArrowDraw((Vector2){player.destRect.x, player.destRect.y});
-        weapon.ArrowUpdate((Vector2){player.destRect.x, player.destRect.y});
 
         enemy.spawn((Vector2){player.destRect.x, player.destRect.y});
         enemy.update((Vector2){player.destRect.x, player.destRect.y});
         
+        weapon.ArrowDraw((Vector2){player.destRect.x, player.destRect.y});
+        weapon.ArrowUpdate((Vector2){player.destRect.x, player.destRect.y}, enemy.enemyList);        
 
         // End drawing
         EndMode2D();

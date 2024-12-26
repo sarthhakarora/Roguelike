@@ -25,7 +25,7 @@ public:
 
     };
 
-    int maxEnemyCount = 30;
+    int maxEnemyCount = 100;
     
 
     Texture2D zombieTexture = LoadTexture("../assets/Tiles/Colored/tile_0011.png");

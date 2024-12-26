@@ -51,16 +51,12 @@ void Bow::ArrowMovement(Vector2 playerPos, Vector2 mousePos)
 
         // Calculate velocity
         arrows.velocity = Vector2Scale(Vector2Normalize(arrows.direction), arrowSpeed);
-        arrows.actualAngle = angle; // Fine-tuned angle you already use
+        arrows.actualAngle = angle; 
 
         // Add the arrow to my list of projectiles
         projectiles.push_back(arrows);
     }
 
-    // Loop through all arrows in the projectiles list
-    
-    
-    
 }
 
 void Bow::BowDraw(){

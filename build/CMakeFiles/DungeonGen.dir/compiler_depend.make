@@ -775,6 +775,7 @@ CMakeFiles/DungeonGen.dir/src/tilemanager.cpp.o: /home/sarthhak/coding\ projects
   /usr/lib/gcc/x86_64-pc-linux-gnu/14.2.1/include/stddef.h
 
 CMakeFiles/DungeonGen.dir/src/weapon.cpp.o: /home/sarthhak/coding\ projects/roguelike/src/weapon.cpp \
+  /home/sarthhak/coding\ projects/roguelike/src/enemy.h \
   /home/sarthhak/coding\ projects/roguelike/src/weapon.h \
   /usr/include/alloca.h \
   /usr/include/asm-generic/errno-base.h \

@@ -1,37 +1,37 @@
 [
 {
   "directory": "/home/sarthhak/coding projects/roguelike/build",
-  "command": "/usr/bin/g++   -g -std=gnu++11 -I/usr/include -o CMakeFiles/DungeonGen.dir/src/main.cpp.o -c \"/home/sarthhak/coding projects/roguelike/src/main.cpp\"",
+  "command": "/usr/bin/g++ -g -std=gnu++11 -I/usr/include -o CMakeFiles/DungeonGen.dir/src/main.cpp.o -c \"/home/sarthhak/coding projects/roguelike/src/main.cpp\"",
   "file": "/home/sarthhak/coding projects/roguelike/src/main.cpp",
   "output": "CMakeFiles/DungeonGen.dir/src/main.cpp.o"
 },
 {
   "directory": "/home/sarthhak/coding projects/roguelike/build",
-  "command": "/usr/bin/g++   -g -std=gnu++11 -I/usr/include -o CMakeFiles/DungeonGen.dir/src/player.cpp.o -c \"/home/sarthhak/coding projects/roguelike/src/player.cpp\"",
+  "command": "/usr/bin/g++ -g -std=gnu++11 -I/usr/include -o CMakeFiles/DungeonGen.dir/src/player.cpp.o -c \"/home/sarthhak/coding projects/roguelike/src/player.cpp\"",
   "file": "/home/sarthhak/coding projects/roguelike/src/player.cpp",
   "output": "CMakeFiles/DungeonGen.dir/src/player.cpp.o"
 },
 {
   "directory": "/home/sarthhak/coding projects/roguelike/build",
-  "command": "/usr/bin/g++   -g -std=gnu++11 -I/usr/include -o CMakeFiles/DungeonGen.dir/src/tilemanager.cpp.o -c \"/home/sarthhak/coding projects/roguelike/src/tilemanager.cpp\"",
+  "command": "/usr/bin/g++ -g -std=gnu++11 -I/usr/include -o CMakeFiles/DungeonGen.dir/src/tilemanager.cpp.o -c \"/home/sarthhak/coding projects/roguelike/src/tilemanager.cpp\"",
   "file": "/home/sarthhak/coding projects/roguelike/src/tilemanager.cpp",
   "output": "CMakeFiles/DungeonGen.dir/src/tilemanager.cpp.o"
 },
 {
   "directory": "/home/sarthhak/coding projects/roguelike/build",
-  "command": "/usr/bin/g++   -g -std=gnu++11 -I/usr/include -o CMakeFiles/DungeonGen.dir/src/camera.cpp.o -c \"/home/sarthhak/coding projects/roguelike/src/camera.cpp\"",
+  "command": "/usr/bin/g++ -g -std=gnu++11 -I/usr/include -o CMakeFiles/DungeonGen.dir/src/camera.cpp.o -c \"/home/sarthhak/coding projects/roguelike/src/camera.cpp\"",
   "file": "/home/sarthhak/coding projects/roguelike/src/camera.cpp",
   "output": "CMakeFiles/DungeonGen.dir/src/camera.cpp.o"
 },
 {
   "directory": "/home/sarthhak/coding projects/roguelike/build",
-  "command": "/usr/bin/g++   -g -std=gnu++11 -I/usr/include -o CMakeFiles/DungeonGen.dir/src/weapon.cpp.o -c \"/home/sarthhak/coding projects/roguelike/src/weapon.cpp\"",
+  "command": "/usr/bin/g++ -g -std=gnu++11 -I/usr/include -o CMakeFiles/DungeonGen.dir/src/weapon.cpp.o -c \"/home/sarthhak/coding projects/roguelike/src/weapon.cpp\"",
   "file": "/home/sarthhak/coding projects/roguelike/src/weapon.cpp",
   "output": "CMakeFiles/DungeonGen.dir/src/weapon.cpp.o"
 },
 {
   "directory": "/home/sarthhak/coding projects/roguelike/build",
-  "command": "/usr/bin/g++   -g -std=gnu++11 -I/usr/include -o CMakeFiles/DungeonGen.dir/src/enemy.cpp.o -c \"/home/sarthhak/coding projects/roguelike/src/enemy.cpp\"",
+  "command": "/usr/bin/g++ -g -std=gnu++11 -I/usr/include -o CMakeFiles/DungeonGen.dir/src/enemy.cpp.o -c \"/home/sarthhak/coding projects/roguelike/src/enemy.cpp\"",
   "file": "/home/sarthhak/coding projects/roguelike/src/enemy.cpp",
   "output": "CMakeFiles/DungeonGen.dir/src/enemy.cpp.o"
 }
